@@ -117,7 +117,7 @@ async function cargarDashboard(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/dashboard"
+                "https://sistema-transmetro-98gy.onrender.com/dashboard"
             );
 
         const datos =
@@ -464,7 +464,7 @@ async function guardarBus(){
         ).value;
 
     let url =
-        "http://localhost:3000/buses";
+        "https://sistema-transmetro-98gy.onrender.com/buses";
 
     let metodo =
         "POST";
@@ -472,7 +472,7 @@ async function guardarBus(){
     if(idBusEditando !== null){
 
         url =
-            `http://localhost:3000/buses/${idBusEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/buses/${idBusEditando}`;
 
         metodo =
             "PUT";
@@ -546,7 +546,7 @@ async function cargarBuses(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/buses"
+                "https://sistema-transmetro-98gy.onrender.com/buses"
             );
 
         const buses =
@@ -673,7 +673,7 @@ async function eliminarBus(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/buses/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/buses/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -706,7 +706,7 @@ async function cargarLineasBus(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/lineas"
+                "https://sistema-transmetro-98gy.onrender.com/lineas"
             );
 
         const lineas =
@@ -746,7 +746,7 @@ async function cargarParqueosBus(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/parqueos"
+                "https://sistema-transmetro-98gy.onrender.com/parqueos"
             );
 
         const parqueos =
@@ -786,7 +786,7 @@ async function cargarPilotosBus(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/pilotos"
+                "https://sistema-transmetro-98gy.onrender.com/pilotos"
             );
 
         const pilotos =
@@ -918,7 +918,7 @@ async function guardarPiloto(){
         ).value;
 
     let url =
-        "http://localhost:3000/pilotos";
+        "https://sistema-transmetro-98gy.onrender.com/pilotos";
 
     let metodo =
         "POST";
@@ -926,7 +926,7 @@ async function guardarPiloto(){
     if(idPilotoEditando !== null){
 
         url =
-            `http://localhost:3000/pilotos/${idPilotoEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/pilotos/${idPilotoEditando}`;
 
         metodo =
             "PUT";
@@ -1001,7 +1001,7 @@ async function cargarPilotos(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/pilotos"
+                "https://sistema-transmetro-98gy.onrender.com/pilotos"
             );
 
         const pilotos =
@@ -1112,7 +1112,7 @@ async function eliminarPiloto(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/pilotos/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/pilotos/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -1242,7 +1242,7 @@ async function guardarEstacion(){
          ).value;
 
     let url =
-        "http://localhost:3000/estaciones";
+        "https://sistema-transmetro-98gy.onrender.com/estaciones";
 
     let metodo =
         "POST";
@@ -1250,7 +1250,7 @@ async function guardarEstacion(){
     if(idEstacionEditando !== null){
 
         url =
-            `http://localhost:3000/estaciones/${idEstacionEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/estaciones/${idEstacionEditando}`;
 
         metodo =
             "PUT";
@@ -1326,7 +1326,7 @@ async function cargarEstaciones(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/estaciones"
+                "https://sistema-transmetro-98gy.onrender.com/estaciones"
             );
 
         const estaciones =
@@ -1477,7 +1477,7 @@ async function eliminarEstacion(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/estaciones/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/estaciones/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -1673,7 +1673,7 @@ async function guardarLinea(){
     }
 
     let url =
-        "http://localhost:3000/lineas";
+        "https://sistema-transmetro-98gy.onrender.com/lineas";
 
     let metodo =
         "POST";
@@ -1681,7 +1681,7 @@ async function guardarLinea(){
     if(idLineaEditando !== null){
 
         url =
-            `http://localhost:3000/lineas/${idLineaEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/lineas/${idLineaEditando}`;
 
         metodo =
             "PUT";
@@ -1748,7 +1748,7 @@ async function cargarLineas(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/lineas"
+                "https://sistema-transmetro-98gy.onrender.com/lineas"
             );
 
         const lineas =
@@ -1870,7 +1870,7 @@ async function eliminarLinea(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/lineas/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/lineas/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -1975,7 +1975,7 @@ async function guardarParqueo(){
         ).value;
 
     let url =
-        "http://localhost:3000/parqueos";
+        "https://sistema-transmetro-98gy.onrender.com/parqueos";
 
     let metodo =
         "POST";
@@ -1983,7 +1983,7 @@ async function guardarParqueo(){
     if(idParqueoEditando !== null){
 
         url =
-            `http://localhost:3000/parqueos/${idParqueoEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/parqueos/${idParqueoEditando}`;
 
         metodo =
             "PUT";
@@ -2047,7 +2047,7 @@ async function cargarParqueos(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/parqueos"
+                "https://sistema-transmetro-98gy.onrender.com/parqueos"
             );
 
         const parqueos =
@@ -2142,7 +2142,7 @@ async function eliminarParqueo(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/parqueos/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/parqueos/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -2237,7 +2237,7 @@ async function guardarAcceso(){
         ).value;
 
     let url =
-        "http://localhost:3000/accesos";
+        "https://sistema-transmetro-98gy.onrender.com/accesos";
 
     let metodo =
         "POST";
@@ -2245,7 +2245,7 @@ async function guardarAcceso(){
     if(idAccesoEditando !== null){
 
         url =
-            `http://localhost:3000/accesos/${idAccesoEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/accesos/${idAccesoEditando}`;
 
         metodo =
             "PUT";
@@ -2304,7 +2304,7 @@ async function cargarAccesos(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/accesos"
+                "https://sistema-transmetro-98gy.onrender.com/accesos"
             );
 
         const accesos =
@@ -2401,7 +2401,7 @@ async function eliminarAcceso(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/accesos/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/accesos/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -2435,7 +2435,7 @@ async function cargarEstacionesAcceso(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/estaciones"
+                "https://sistema-transmetro-98gy.onrender.com/estaciones"
             );
 
         const estaciones =
@@ -2551,7 +2551,7 @@ async function guardarGuardia(){
         ).value;
 
     let url =
-        "http://localhost:3000/guardias";
+        "https://sistema-transmetro-98gy.onrender.com/guardias";
 
     let metodo =
         "POST";
@@ -2559,7 +2559,7 @@ async function guardarGuardia(){
     if(idGuardiaEditando !== null){
 
         url =
-            `http://localhost:3000/guardias/${idGuardiaEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/guardias/${idGuardiaEditando}`;
 
         metodo =
             "PUT";
@@ -2625,7 +2625,7 @@ async function cargarGuardias(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/guardias"
+                "https://sistema-transmetro-98gy.onrender.com/guardias"
             );
 
         const guardias =
@@ -2699,7 +2699,7 @@ async function cargarAccesosGuardia(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/accesos"
+                "https://sistema-transmetro-98gy.onrender.com/accesos"
             );
 
         const accesos =
@@ -2769,7 +2769,7 @@ async function eliminarGuardia(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/guardias/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/guardias/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -2906,7 +2906,7 @@ async function guardarAlerta(){
         ).value;
 
     let url =
-        "http://localhost:3000/alertas";
+        "https://sistema-transmetro-98gy.onrender.com/alertas";
 
     let metodo =
         "POST";
@@ -2914,7 +2914,7 @@ async function guardarAlerta(){
     if(idAlertaEditando !== null){
 
         url =
-            `http://localhost:3000/alertas/${idAlertaEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/alertas/${idAlertaEditando}`;
 
         metodo =
             "PUT";
@@ -2976,7 +2976,7 @@ async function cargarAlertas(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/alertas"
+                "https://sistema-transmetro-98gy.onrender.com/alertas"
             );
 
         const alertas =
@@ -3079,7 +3079,7 @@ async function eliminarAlerta(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/alertas/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/alertas/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -3111,7 +3111,7 @@ async function cargarBusesAlerta(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/buses"
+                "https://sistema-transmetro-98gy.onrender.com/buses"
             );
 
         const buses =
@@ -3150,7 +3150,7 @@ async function cargarEstacionesAlerta(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/estaciones"
+                "https://sistema-transmetro-98gy.onrender.com/estaciones"
             );
 
         const estaciones =
@@ -3322,7 +3322,7 @@ async function guardarUsuario(){
         ).value;
 
     let url =
-        "http://localhost:3000/usuarios";
+        "https://sistema-transmetro-98gy.onrender.com/usuarios";
 
     let metodo =
         "POST";
@@ -3330,7 +3330,7 @@ async function guardarUsuario(){
     if(idUsuarioEditando !== null){
 
         url =
-            `http://localhost:3000/usuarios/${idUsuarioEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/usuarios/${idUsuarioEditando}`;
 
         metodo =
             "PUT";
@@ -3403,7 +3403,7 @@ async function cargarUsuarios(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/usuarios"
+                "https://sistema-transmetro-98gy.onrender.com/usuarios"
             );
 
         const usuarios =
@@ -3512,7 +3512,7 @@ async function eliminarUsuario(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/usuarios/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/usuarios/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -3611,7 +3611,7 @@ async function guardarMunicipalidad(){
         ).value;
 
     let url =
-        "http://localhost:3000/municipalidades";
+        "https://sistema-transmetro-98gy.onrender.com/municipalidades";
 
     let metodo =
         "POST";
@@ -3619,7 +3619,7 @@ async function guardarMunicipalidad(){
     if(idMunicipalidadEditando !== null){
 
         url =
-            `http://localhost:3000/municipalidades/${idMunicipalidadEditando}`;
+            `https://sistema-transmetro-98gy.onrender.com/municipalidades/${idMunicipalidadEditando}`;
 
         metodo =
             "PUT";
@@ -3685,7 +3685,7 @@ async function cargarMunicipalidades(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/municipalidades"
+                "https://sistema-transmetro-98gy.onrender.com/municipalidades"
             );
 
         const municipalidades =
@@ -3780,7 +3780,7 @@ async function eliminarMunicipalidad(id){
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/municipalidades/${id}`,
+                `https://sistema-transmetro-98gy.onrender.com/municipalidades/${id}`,
                 {
                     method:"DELETE"
                 }
@@ -3812,7 +3812,7 @@ async function cargarMunicipalidadesLinea(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/municipalidades"
+                "https://sistema-transmetro-98gy.onrender.com/municipalidades"
             );
 
         const municipalidades =
@@ -3857,7 +3857,7 @@ async function cargarMunicipalidadesEstacion(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/municipalidades"
+                "https://sistema-transmetro-98gy.onrender.com/municipalidades"
             );
 
         const municipalidades =
@@ -3900,7 +3900,7 @@ async function cargarLineasEstacion(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/lineas"
+                "https://sistema-transmetro-98gy.onrender.com/lineas"
             );
 
         const lineas =
@@ -4012,7 +4012,7 @@ async function cargarRutas(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/rutas"
+                "https://sistema-transmetro-98gy.onrender.com/rutas"
             );
 
         const rutas =
@@ -4075,7 +4075,7 @@ async function cargarLineasRuta(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/lineas"
+                "https://sistema-transmetro-98gy.onrender.com/lineas"
             );
 
         const lineas =
@@ -4114,7 +4114,7 @@ async function cargarEstacionesRuta(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/estaciones"
+                "https://sistema-transmetro-98gy.onrender.com/estaciones"
             );
 
         const estaciones =
@@ -4173,7 +4173,7 @@ async function guardarRuta(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/rutas",
+                "https://sistema-transmetro-98gy.onrender.com/rutas",
                 {
                     method:"POST",
 
@@ -4240,7 +4240,7 @@ async function eliminarRuta(
 
         const respuesta =
             await fetch(
-                `http://localhost:3000/rutas/${idLinea}/${idEstacion}`,
+                `https://sistema-transmetro-98gy.onrender.com/rutas/${idLinea}/${idEstacion}`,
                 {
                     method:"DELETE"
                 }
@@ -4490,7 +4490,7 @@ async function cargarReporteEstaciones(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/reporte-estaciones"
+                "https://sistema-transmetro-98gy.onrender.com/reporte-estaciones"
             );
 
         const datos =
@@ -4527,7 +4527,7 @@ async function cargarReporteBuses(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/reporte-buses"
+                "https://sistema-transmetro-98gy.onrender.com/reporte-buses"
             );
 
         const datos =
@@ -4564,7 +4564,7 @@ async function cargarReportePilotos(){
 
         const respuesta =
             await fetch(
-                "http://localhost:3000/reporte-pilotos"
+                "https://sistema-transmetro-98gy.onrender.com/reporte-pilotos"
             );
 
         const datos =
