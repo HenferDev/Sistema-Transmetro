@@ -1,0 +1,1011 @@
+/* =========================
+RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* =========================
+BODY
+========================= */
+
+body{
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        #f4f7fb,
+        #ffffff,
+        #eef4ff
+    );
+
+    color:#0f172a;
+
+    min-height:100vh;
+}
+
+/* =========================
+SIDEBAR
+========================= */
+
+.sidebar{
+
+    width:280px;
+
+    height:100vh;
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    background:#ffffff;
+
+    border-right:
+        1px solid #e2e8f0;
+
+    padding:30px 20px;
+
+    overflow-y:auto;
+
+    box-shadow:
+        4px 0 18px rgba(0,0,0,0.05);
+
+    display:flex;
+    flex-direction:column;
+}
+
+/* =========================
+LOGO TRANSMETRO
+========================= */
+
+.logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin-bottom:30px;
+
+    padding-bottom:25px;
+
+    border-bottom:
+        1px solid #e2e8f0;
+}
+
+.logo img{
+
+    width:190px;
+
+    object-fit:contain;
+}
+
+/* =========================
+MENU
+========================= */
+
+.sidebar nav ul{
+
+    list-style:none;
+}
+
+.sidebar nav ul li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px 18px;
+
+    margin-bottom:8px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    transition:0.25s;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#334155;
+}
+
+.sidebar nav ul li:hover{
+
+    background:#0b48b8;
+
+    color:white;
+
+    transform:
+        translateX(3px);
+
+    box-shadow:
+        0 8px 20px rgba(
+            11,
+            72,
+            184,
+            0.20
+        );
+}
+
+.sidebar li i{
+
+    width:20px;
+
+    text-align:center;
+}
+
+/* =========================
+LOGO MUNICIPALIDAD
+========================= */
+
+.sidebar-footer{
+
+    margin-top:auto;
+
+    padding-top:15px;
+    padding-bottom:20px;
+
+    text-align:center;
+
+    border-top:
+        1px solid #e2e8f0;
+}
+
+.sidebar-footer img{
+
+    width:180px;
+
+    height:auto;
+
+    opacity:0.9;
+
+    transition:0.3s;
+}
+
+.sidebar-footer img:hover{
+
+    opacity:1;
+
+    transform:
+        scale(1.05);
+}
+
+/* =========================
+MAIN
+========================= */
+
+.main{
+
+    margin-left:280px;
+
+    padding:30px;
+}
+
+/* =========================
+TOPBAR
+========================= */
+
+.topbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:30px;
+}
+
+.topbar h1{
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#0f172a;
+}
+
+.topbar p{
+
+    font-size:17px;
+
+    color:#64748b;
+
+    margin-top:5px;
+}
+
+.topbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+}
+
+/* =========================
+SEARCH
+========================= */
+
+.search{
+
+    min-width:280px;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    border:
+        1px solid #dbe4ea;
+
+    background:white;
+
+    font-size:15px;
+
+    color:#0f172a;
+
+    outline:none;
+
+    transition:0.3s;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.04);
+}
+
+.search::placeholder{
+
+    color:#94a3b8;
+}
+
+.search:focus{
+
+    border-color:#0b48b8;
+
+    box-shadow:
+        0 0 0 4px rgba(
+            11,
+            72,
+            184,
+            0.12
+        );
+}
+
+/* =========================
+USER
+========================= */
+
+.user{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:white;
+
+    padding:10px 18px;
+
+    border-radius:16px;
+
+    border:
+        1px solid #e2e8f0;
+
+    box-shadow:
+        0 4px 12px rgba(0,0,0,0.04);
+}
+
+/* =========================
+AVATAR
+========================= */
+
+.avatar{
+
+    width:48px;
+
+    height:48px;
+
+    border-radius:50%;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0b48b8,
+        #65a30d
+    );
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    font-weight:bold;
+}
+
+.user h4{
+
+    font-size:15px;
+
+    color:#0f172a;
+
+    margin-bottom:2px;
+}
+
+.user span{
+
+    font-size:13px;
+
+    color:#64748b;
+}
+
+/* =========================
+CARDS
+========================= */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+    margin-bottom:30px;
+}
+
+.card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border-top:
+        4px solid #0b48b8;
+
+    box-shadow:
+        0 6px 18px rgba(
+            0,
+            0,
+            0,
+            0.05
+        );
+
+    transition:0.3s;
+}
+
+.card:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 12px 24px rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+}
+
+.card h3{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    color:#64748b;
+
+    margin-bottom:10px;
+}
+
+.card p{
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    color:#0b48b8;
+}
+
+/* =========================
+GRAFICAS
+========================= */
+
+.graficas{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit,minmax(400px,1fr));
+
+    gap:20px;
+}
+
+.grafica-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border-top:
+        4px solid #65a30d;
+
+    box-shadow:
+        0 6px 18px rgba(
+            0,
+            0,
+            0,
+            0.05
+        );
+
+    min-height:420px;
+}
+
+.grafica-card h2{
+
+    font-size:22px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+    margin-bottom:20px;
+}
+
+.grafica-card canvas{
+
+    width:100% !important;
+
+    height:320px !important;
+}
+/* =========================
+FORMULARIOS
+========================= */
+
+.formulario{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    margin-bottom:30px;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    border:
+        1px solid #e2e8f0;
+
+    box-shadow:
+        0 6px 18px rgba(
+            0,
+            0,
+            0,
+            0.05
+        );
+}
+
+.formulario input,
+.formulario select{
+
+    flex:1;
+
+    min-width:220px;
+
+    padding:14px 15px;
+
+    border-radius:12px;
+
+    border:
+        1px solid #cbd5e1;
+
+    background:white;
+
+    font-size:15px;
+
+    color:#0f172a;
+
+    outline:none;
+
+    transition:0.3s;
+}
+
+.formulario input:focus,
+.formulario select:focus{
+
+    border-color:#0b48b8;
+
+    box-shadow:
+        0 0 0 4px rgba(
+            11,
+            72,
+            184,
+            0.12
+        );
+}
+
+.formulario button{
+
+    padding:14px 24px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0b48b8,
+        #65a30d
+    );
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.formulario button:hover{
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(
+            11,
+            72,
+            184,
+            0.20
+        );
+}
+/* =========================
+TABLAS
+========================= */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    border:
+        1px solid #e2e8f0;
+
+    box-shadow:
+        0 6px 18px rgba(
+            0,
+            0,
+            0,
+            0.05
+        );
+}
+
+table th{
+
+    background:#0b48b8;
+
+    color:white;
+
+    padding:16px;
+
+    text-align:left;
+
+    font-size:15px;
+
+    font-weight:600;
+}
+
+table td{
+
+    padding:16px;
+
+    border-top:
+        1px solid #e2e8f0;
+
+    font-size:15px;
+
+    color:#334155;
+}
+
+table tbody tr{
+
+    transition:0.2s;
+}
+
+table tbody tr:hover{
+
+    background:#f8fafc;
+}
+
+/* =========================
+BOTONES TABLAS
+========================= */
+
+table button{
+
+    padding:8px 14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    transition:0.3s;
+
+    margin-right:5px;
+}
+
+/* EDITAR */
+
+table button:first-child{
+
+    background:#0b48b8;
+
+    color:white;
+}
+
+table button:first-child:hover{
+
+    background:#08368a;
+}
+
+/* ELIMINAR */
+
+table button:last-child{
+
+    background:#dc2626;
+
+    color:white;
+}
+
+table button:last-child:hover{
+
+    background:#b91c1c;
+}
+
+/* =========================
+LOGIN
+========================= */
+
+.login-body{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:100vh;
+
+    padding:20px;
+}
+
+.login-container{
+
+    width:100%;
+
+    max-width:500px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:24px;
+
+    border:
+        1px solid #e2e8f0;
+
+    box-shadow:
+        0 12px 30px rgba(
+            0,
+            0,
+            0,
+            0.08
+        );
+}
+
+.login-logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:20px;
+}
+
+.login-logo img{
+
+    width:220px;
+
+    height:auto;
+}
+
+.login-header{
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.login-header h1{
+
+    font-size:38px;
+
+    color:#0f172a;
+
+    margin-bottom:10px;
+}
+
+.login-header p{
+
+    font-size:15px;
+
+    color:#64748b;
+}
+
+.login-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+}
+
+.input-group label{
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#334155;
+}
+
+.input-group input{
+
+    padding:14px;
+
+    border-radius:12px;
+
+    border:
+        1px solid #cbd5e1;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:0.3s;
+}
+
+.input-group input:focus{
+
+    border-color:#0b48b8;
+
+    box-shadow:
+        0 0 0 4px rgba(
+            11,
+            72,
+            184,
+            0.12
+        );
+}
+
+.login-form button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #0b48b8,
+        #65a30d
+    );
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.login-form button:hover{
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 18px rgba(
+            11,
+            72,
+            184,
+            0.20
+        );
+}
+
+.mensaje{
+
+    text-align:center;
+
+    color:#dc2626;
+
+    font-size:14px;
+}
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:900px){
+
+    .sidebar{
+
+        position:relative;
+
+        width:100%;
+
+        height:auto;
+    }
+
+    .main{
+
+        margin-left:0;
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+    }
+
+    .topbar-right{
+
+        width:100%;
+    }
+
+    .search{
+
+        width:100%;
+
+        min-width:100%;
+    }
+
+    .user{
+
+        width:100%;
+    }
+
+    .cards{
+
+        grid-template-columns:1fr;
+    }
+
+    .graficas{
+
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    .main{
+
+        padding:20px;
+    }
+
+    .topbar h1{
+
+        font-size:34px;
+    }
+
+    #contenido h1{
+
+        font-size:28px;
+    }
+
+    .card p{
+
+        font-size:34px;
+    }
+
+    .grafica-card{
+
+        min-height:350px;
+    }
+
+    .grafica-card canvas{
+
+        height:250px !important;
+    }
+
+    .formulario{
+
+        flex-direction:column;
+    }
+
+    .formulario input,
+    .formulario select,
+    .formulario button{
+
+        width:100%;
+    }
+
+    table{
+
+        font-size:14px;
+    }
+
+    table th,
+    table td{
+
+        padding:12px;
+    }
+}
