@@ -2,11 +2,9 @@
 
 <!DOCTYPE html>
 <html lang="es">
-    
-<script>
-const usuario = localStorage.getItem("usuarioLogueado");
 
-if(!usuario){
+<script>
+if(!localStorage.getItem("usuarioLogueado")){
     window.location.href = "index.html";
 }
 </script>
