@@ -2149,6 +2149,10 @@ app.get("/reporte-estaciones", (req, res) => {
     });
 });
 
+app.get("/prueba", (req, res) => {
+    res.send("FUNCIONA");
+});
+
 
 // =====================================================
 // PUERTO EXPRESS
