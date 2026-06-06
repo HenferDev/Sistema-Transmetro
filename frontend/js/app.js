@@ -4281,7 +4281,7 @@ const usuario =
 if(!usuario){
 
     window.location.href =
-        "login.html";
+        "index.html";
 }
 mostrarDashboard();
 cargarUsuarioLogueado();
